@@ -8,7 +8,6 @@ class TextType(Enum):
     LINK = "link"
     IMAGE = "image"
 
-
 class TextNode:
     def __init__(self, TEXT, TEXT_TYPE, URL=None):
         self.text = TEXT
@@ -32,8 +31,6 @@ class TextNode:
 def main():
     test_node = TextNode("Hello", TextType.BOLD, None)
     print(test_node)
-
-main()
 
 if __name__ == "__main__":
     main()
